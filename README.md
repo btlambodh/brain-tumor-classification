@@ -45,4 +45,4 @@ Crop the part of the image that contains only the brain (which is the most impor
 A pre-trained model is a model that was trained on a large benchmark dataset to solve a problem similar to the one that we want to solve. Accordingly, due to the computational cost of training such models, it is common practice to import and use models from published literature (e.g. VGG, Inception, ResNet). For this project, I decided to use **ResNet152V2** model to perform image classification for brain tumor MRI images.[ResNet152V2](https://keras.io/api/applications/resnet/)
 
 ## Note
-You can see more details about training steps and testing results inside [Brain_Tumor_Classification.ipynb](https://github.com/btlambodh/brain-tumor-classification/blob/main/Brain_Tumor_Classification.ipynb)
+You can see more details about training steps and testing results inside [brain_tumor_cnn_classification.ipynb](https://github.com/btlambodh/brain-tumor-classification/blob/main/brain_tumor_cnn_classification.ipynb)
