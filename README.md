@@ -12,13 +12,11 @@ Early detection and classification of brain tumors are crucial areas of study in
 
 | **Package Name**      | **Version** |
 | --------------------- | ----------- |
-| `python`              |       |
-| `tensorflow`          |        |
-| `keras`               |        |
-| `keras-preprocessing` |        |
-| `matplotlib`          |        |
-| `opencv`              |        |
-| `scikit-learn`        |       |
+| `python`              |  3.11.5     |
+| `tensorflow`          |  2.16.1     |
+| `keras`               |  3.1.1      |
+| `matplotlib`          |  3.7.2      |
+| `scikit-learn`        |  1.3.0      |
 
 ## Dataset
 
