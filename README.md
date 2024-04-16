@@ -36,31 +36,39 @@ About 22% of the images are intended for model testing and the rest for model tr
 
 Pay attention that The size of the images in this dataset is different. You can resize images to the desired size after pre-processing and removing the extra margins.
 
-The training dataset underwent splitting into training and validation sets, allocating 20% of the data specifically for validation purposes. The delineation is as follows:
+The training dataset underwent splitting into training and validation sets, allocating 20% of the data specifically for validation purposes. 
+The delineation is as follows:
 
 •	No Tumor: 
-  o	Training Data: 1595 
-  o	Testing Data: 405 
+Training Data: 1595 
+Testing Data: 405 
+
 •	Glioma:
-  o	Training Data: 1321 
-  o	Testing Data: 300 
+Training Data: 1321 
+Testing Data: 300 
+
 •	Meningioma:
-  o	Training Data: 1339 
-  o	Testing Data: 306 
+Training Data: 1339 
+Testing Data: 306 
+
 •	Pituitary Tumor:
-  o	Training Data: 1457 
-  o	Testing Data: 300 
+Training Data: 1457 
+Testing Data: 300 
 
 
 ### Data Pre-processing
 
 Preprocessing steps are fundamental in refining input data quality and elevating CNN model performance. In our experimentation with various data augmentation techniques, we observed a discernible impact on the performance metrics of our model. Employing a trial-and-error approach, we noted that an increase in the number of augmentation methods corresponded with a decline in the model's performance and accuracy in predicting tumor characteristics. For instance, upon employing the entirety of the listed augmentation techniques, the accuracy score plateaued at 70%. Conversely, when restricting augmentation solely to normalization, specifically rescaling pixel values to the range [0,1], a notable improvement was evident, with the accuracy score surging to 94.38%. The subsequent preprocessing methodologies that we experimented with encompassed:
+
 Data Augmentation:
 This step involved the application of diverse techniques to augment the dataset, thereby enhancing its variability and bolstering the CNN model's ability to generalize. Techniques such as rotation, width and height shifting, shearing, zooming, flipping, brightness adjustment, and channel shifting were employed to achieve this augmentation.
+
 Normalization:
 In this process, pixel values within the images were rescaled to fit within the range of [0, 1]. This standardization ensured uniformity across the dataset and facilitated smoother convergence during the model training phase.
+
 Standardization:
 Both feature-wise and sample-wise standardization were implemented to regulate the distribution of features within the dataset. Feature-wise standardization ensured that each feature maintained a mean of 0 and a standard deviation of 1 across the dataset, while sample-wise standardization maintained consistency within individual samples.
+
 ZCA Whitening:
 This technique was utilized to reduce redundancy within image features by decorrelating them. By employing ZCA whitening, the convergence speed of the CNN model was improved, as redundant information was minimized, leading to more efficient training processes.
 
