@@ -36,9 +36,7 @@ Pay attention that The size of the images in this dataset is different. You can 
 
 ### Data Pre-processing
 
-Crop the part of the image that contains only the brain (which is the most important part of the image): The cropping technique is used to find the extreme top, bottom, left and right points of the brain using OpenCV. You can do this with [Preprocessing.py](https://github.com/btlambodh/brain-tumor-classification/blob/main/Preprocessing.py)
-
-![preprocessing result](https://github.com/btlambodh/brain-tumor-classification/blob/main/preprocess.jpg)
+Crop the part of the image that contains only the brain (which is the most important part of the image): The cropping technique is used to find the extreme top, bottom, left and right points of the brain using OpenCV.
 
 ## Pre-trained Model
 
